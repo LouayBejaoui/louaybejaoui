@@ -170,7 +170,7 @@ dl {
 }
 .projects {
   display: grid;
-  grid-template-columns: 320px 320px 320px;
+  grid-template-columns: 30% 30% 30%;
   gap: 3em;
   width: 72%;
   margin-left: auto;
