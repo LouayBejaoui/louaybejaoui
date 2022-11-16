@@ -30,8 +30,8 @@ a {
 }
 .navbar span {
   position: relative;
-  top: 25px;
-  font-size: 2.5rem;
+  top: 125px;
+  font-size: 6.5rem;
   font-family: "Great Vibes", cursive;
   color: #e76f51;
 }
@@ -58,9 +58,11 @@ a {
 .options h2:hover {
   border-bottom: solid #e76f51;
   margin-bottom: -1px;
+    color: #ffebd2
 }
 .activeNavbar:hover {
-  border: solid #e76f51 2px;
+  border: solid #ffebd2 2px;
+
 }
 .options a {
   margin-right: 10px;
@@ -170,7 +172,7 @@ dl {
 }
 .projects {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns:repeat(3 , 1fr);
   gap: 3em;
   width: 72%;
   margin-left: auto;

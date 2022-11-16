@@ -21,7 +21,7 @@ function Options() {
       </a>
       <a href="" className="activeNavbar">
         {" "}
-        <h2>Download CV</h2>
+        <h2 style={{border:"none"}}>Download CV</h2>
       </a>
     </div>
   );

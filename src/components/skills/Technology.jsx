@@ -1,27 +1,24 @@
 import React, { useState } from "react";
+import handleViewport from 'react-in-viewport';
 import VerifiedIcon from "@mui/icons-material/Verified";
 function Technology(props) {
-  const [isActive, setStatus] = useState(false);
+
 
   const percentage = props.percentage;
   const customStyle = {
     maxWidth: percentage
   };
 
-  function showPercentage(e) {
-    setStatus((isActive) => !isActive);
-    console.log(e);
-  }
 
   return (
-    <div onScroll={() => showPercentage()} className="technology">
+    <div  className="technology">
       <h4>
         <VerifiedIcon style={{ marginRight: "10px", color: "#ffebd2" }} />
         {props.name}
       </h4>
       <div className="skill-bar">
         <div
-          className={isActive ? "skill-per skill-per-after" : "skill-per"}
+          className={"skill-per skill-per-after"}
           per={props.percentage}
           style={customStyle}
         ></div>

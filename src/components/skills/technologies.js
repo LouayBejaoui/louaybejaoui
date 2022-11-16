@@ -33,6 +33,10 @@ const technologies = [
     percentage: "60%"
   },
   {
+    name: "GIT",
+    percentage: "60%"
+  },
+  {
     name: "Figma",
     percentage: "70%"
   }
