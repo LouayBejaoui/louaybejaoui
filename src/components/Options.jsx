@@ -1,6 +1,15 @@
 import React from "react";
+import FileSaver from "file-saver";
 
-function Options() {
+const saveFile = (e) => {
+  e.preventDefault();
+  FileSaver.saveAs(
+    process.env.PUBLIC_URL + + "/CV.pdf",
+    "Louay Bejaoui's cv.pdf"
+  );
+}
+
+export default function Options() {
   return (
     <div className="options navbar-collapse collapse w-100 order-3 dual-collapse2">
       <a href="#about">
@@ -19,11 +28,11 @@ function Options() {
         {" "}
         <h2>Contact Me</h2>
       </a>
-      <a href="" className="activeNavbar">
+      <a href="" className="activeNavbar" onClick={saveFile}>
         {" "}
         <h2 style={{border:"none"}}>Download CV</h2>
       </a>
     </div>
   );
 }
-export default Options;
+

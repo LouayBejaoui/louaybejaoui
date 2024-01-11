@@ -5,11 +5,19 @@ const technologies = [
   },
 
   {
-    name: "CSS",
+    name: "CSS/SCSS",
     percentage: "90%"
   },
   {
     name: "Javascript",
+    percentage: "80%"
+  },
+  {
+    name: "Typescript",
+    percentage: "80%"
+  },
+  {
+    name: "React.js",
     percentage: "80%"
   },
   {
@@ -21,17 +29,18 @@ const technologies = [
     percentage: "70%"
   },
   {
-    name: "React.js",
-    percentage: "70%"
+    name: "MYSQL",
+    percentage: "60%"
   },
   {
     name: "PHP",
     percentage: "30%"
   },
   {
-    name: "MYSQL",
-    percentage: "60%"
+    name: "Python",
+    percentage: "30%"
   },
+ 
   {
     name: "GIT",
     percentage: "60%"
